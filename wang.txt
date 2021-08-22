@@ -1,0 +1,16 @@
+One might get too swamped with the technicality for deriving such a complicated
+differential path. It is helpful to summarize the flow in the main approach:
+(1) analyze the propagation of differences, (2) identify wanted and un-wanted
+differences, and (3) use the Boolean function and the carry effect to introduce
+and absorb these differences.
+
+
+At this point, it is worth comparing the security of the MD4 family of hash
+functions against the best known attacks today. We can see that more complicated
+message preprocessing does provide more security. However, even for
+SHA-1, the message expansion does not seem to offer enough avalanche effect
+in terms of spreading the input differences. Furthermore, there seem to be some
+unexpected weaknesses in the structure of all the step updating functions. In
+particular, because of the simple step operation, the certain properties of some
+Boolean functions combined with the carry effect actually facilitate, rather than
+prevent, differential attacks.
